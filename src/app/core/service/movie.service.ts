@@ -9,9 +9,9 @@ export class MovieService {
   constructor(private http:HttpClient) { }
 
   public getUpcoming(page:number):Observable<ApiResponse>{
-    return this.http.get<any>(`http://localhost/movies/upcoming?page=${page}`);
+    return this.http.get<any>(`https://arctouch-tmdb.herokuapp.com/movies/upcoming?page=${page}`);
   }
   public queryMovie(query:string, page:number):Observable<ApiResponse>{
-    return this.http.get<any>(`http://localhost/movies/query?query=${query}&page=${page}`);
+    return this.http.get<any>(`https://arctouch-tmdb.herokuapp.com/movies/query?query=${query}&page=${page}`);
   }
 }
