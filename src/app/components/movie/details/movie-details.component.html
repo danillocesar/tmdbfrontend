@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>{{movie.original_title}}</h1>
+
+<div mat-dialog-content>
+    <div fxLayout="row" fxLayoutGap="25px">
+        <div fxFlex="30">
+            <img mat-card-image src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}" alt="{{original_title}}">
+            <div class="small-text">Release date: {{movie.release_date}}</div>
+        </div>
+        <div fxFlex="70" class="movie-details">
+            <p><span>Adult:</span> {{movie.adult?'Yes':'No'}}</p>
+            <p><span>Language:</span> {{movie.original_language.toUpperCase()}}</p>
+            <p><span>Genre: {{joinGenres(movie.genres)}}</span></p>
+            <p><span>Overview:</span></p>
+            <p>{{movie.overview}}</p>
+        </div>
+    </div>
+</div>
