@@ -14,7 +14,7 @@
                   <span class="genres-names">{{joinGenres(movie.genres)}}</span>
                 </mat-card-subtitle>
               </mat-card-header>
-              <img mat-card-image src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}" alt="{{original_title}}">
+              <img mat-card-image src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}" alt="{{movie.original_title}}">
               <mat-card-content>
                 <p>{{movie.overview}}</p>
               </mat-card-content>
@@ -44,7 +44,7 @@
                         <span class="genres-names">{{joinGenres(movie.genres)}}</span>
                       </mat-card-subtitle>
                     </mat-card-header>
-                    <img mat-card-image src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}" alt="{{original_title}}">
+                    <img mat-card-image src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}" alt="{{movie.original_title}}">
                     <mat-card-content>
                       <p>{{movie.overview}}</p>
                     </mat-card-content>
